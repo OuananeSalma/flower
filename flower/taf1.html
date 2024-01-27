@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+body{
+    background-color: white;
+}
+label{
+    font-size: small;
+    display: block;
+}
+.parent{
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+    justify-content: center;
+}
+h2, h3{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+img{
+    height: 350px; 
+    width: 270px;
+}
+
+@media (max-width:910px) and (min-width:200px){
+    .parent{
+        flex-wrap: wrap;
+
+    }
+    .img{
+        width: 50%;
+    }
+}
+@media (max-width:100px){
+    .parent{
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+    }
+
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="forme">
+        <h1>FLOWER</h1>
+        <form action="past">
+            <label for="FLOWER">FILTER BY:</label>
+            <select name="choose" id="z">
+                <option value="tout choose">Flowers</option>
+            </select>
+            <label for="prix">SORT BY:</label><br>
+            <select name="prix" id="p">
+                <option value="prix">Featured</option>
+            </select>
+        </form>
+    </div>
+    <div class="parent">
+        <div class="i">
+            <img src="flower.png" alt="flower">
+            <h2>pink flower</h2>
+            <h4>$10</h4>
+        </div>
+        <div class="i">
+            <img src="flower.png" alt="flower">
+            <h2>pink flower</h2>
+            <h4>$10</h4>
+        </div>
+        <div class="i">
+            <img src="flower.png" alt="flower">
+            <h2>pink flower</h2>
+            <h4>$10</h4>
+        </div>
+        <div class="i">
+            <img src="flower.png" alt="flower">
+            <h2>pink flower</h2>
+            <h4>$10</h4>
+        </div>
+        <div class="i">
+            <img src="flower.png" alt="flower">
+            <h2>pink flower</h2>
+            <h4>$10</h4>
+        </div>
+    </div>
+</div>
+</body>
+</html>
